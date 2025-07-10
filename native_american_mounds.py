@@ -9,9 +9,7 @@ import matplotlib.pyplot as plt
 import warnings
 
 from lidar import lidar
-
 from matplotlib.pylab import *
-from mpl_toolkits.mplot3d import axes3d
 
 THIS_SCRIPT = sys.argv[0]
 USAGE = f'$ python3 {THIS_SCRIPT} <lidar_filename*.laz>'

@@ -12,7 +12,6 @@ from lidar import lidar
 
 from matplotlib.pylab import *
 from mpl_toolkits.mplot3d import axes3d
-from scipy.interpolate import griddata
 
 THIS_SCRIPT = sys.argv[0]
 USAGE = f'$ python3 {THIS_SCRIPT} <lidar_filename*.laz>'

@@ -1,10 +1,33 @@
 ###### SAMPLE PYTHON 3 CODE TO VISUALIZE USGS LIDAR DATA OVER MOUNDSVILLE, WV
 
-    There are two Python 3 source files in this repository.
+    There are two Python 3 source files in this repository: liday.py and native_american_mounds.py.
+    The liday.py file is a utility file, that contains a class for reading Lidar files (.laz extension).
+    The so-called "main()" method is in native_american_mounds.py.
+
+    This is just a short simple program that shows some code of how to read an .laz file with
+    Lidar data, and visualize the data within. The code first reads the data from the input .laz file,
+    and re-projects the coordinates from meters to a WGS-84 (decimal-degrees) projection. From there,
+    the points are filtered to a very small bounding box centered over the Grave Creek Mound, in
+    Moundsville, WV. 
+
+    Then the data is visualized in 3D, sending this visaul to a PNG file that you see below.
        
 ###### COMMAND-LINE USAGE:
 
-    Get the code:
+    Install pre-requisites (if necessary). For example, on Ubuntu/Debian:
+    $ pip3 install numpy
+    $ pip3 install matplotlib
+    $ pip3 install laspy
+    $ pip3 install "laspy[laszip]"
+
+    Then to run:
+    $ python3 native_american_mounds.py USGS_LPC_WV_FEMAR3_Southcentral_2018_D19_e1286n1981.laz
+
+###### INPUT DATA
+
+    Input data file(s) can be downloaded from the U.S. Geological Survey's
+    Earth Explorer Website:
+      https://earthexplorer.usgs.gov/
     
 ###### Python version:
      

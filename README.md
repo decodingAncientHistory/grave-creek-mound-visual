@@ -20,7 +20,7 @@
     $ pip3 install laspy
     $ pip3 install "laspy[laszip]"
 
-    Then to run:
+    Then to run at command-line, pass in the name of the lidar data file (.laz):
     $ python3 native_american_mounds.py USGS_LPC_WV_FEMAR3_Southcentral_2018_D19_e1286n1981.laz
 
 ###### INPUT DATA
@@ -36,13 +36,6 @@
 ###### Sample Outputs
 
 ![Alt text](https://64.media.tumblr.com/4b2b3f3adcfc56d22ba5799679ab0eca/258731833f755aed-be/s1280x1920/d9db5433980ccd6715ab1f4a53de7f7983068111.pnj)
-
-    A 1-band Geotiff is written out to disk. This Geotiff contains 1s and 0s. The 1s 
-    mark areas of so-called "flood-fill." This is the area that is "filled-in" by the 
-    algorithm according to the elevation boundaries of the Digital Elevation Model.
-
-    We can use any common plotting software (e.g. Python, Matlab, QGIS, GrADS, etc.)
-    to visualize the output (here we are using's Python 3.x's Matplotlib module.
         
 ###### @author: 
     Gerasimos Michalitsianos
